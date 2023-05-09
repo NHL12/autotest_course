@@ -3,10 +3,13 @@
 
 path = 'C:/Users/ns.grigorova/python3/myfile.txt'
 
-print("Есть абсолютный путь до файла: ", path)
+#находим название файла с расширением
 file_name = path.split('/')[-1]
+#находим название файла без расширения
 file_not_extension = file_name.split('.')[0]
+#находим название диска
 name_disk = path.split(':/')[0]
+#находим название корневой папки
 root_folder = path.split('/')[1]
 
 print("Название файла без расширения: ", file_not_extension)
