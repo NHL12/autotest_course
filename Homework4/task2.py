@@ -7,12 +7,12 @@
 
 def flatten_and_sort(array):
     result_list = []
-    for i in array:
-        if type(i) is list:
-            for j in i:
-                result_list.append(j)
+    for item in array:
+        if type(item) is list:
+            for element in item:
+                result_list.append(element)
         else:
-            result_list.append(i)
+            result_list.append(item)
     result_list.sort()
     return result_list
 
